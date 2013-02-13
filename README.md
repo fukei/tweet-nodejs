@@ -13,13 +13,17 @@ twに比べて機能は不足しています。
 
 ※node.jsとnpmが入っている前提です
 
+    npm -g install tweet-nodejs
+    
+    または
+    
     git clone https://github.com/fukei/tweet-nodejs.git
     cd tweet-nodejs
     npm install
 
 ユーザ登録。ブラウザで認証して表示されたPINコードを取得して入力。
 
-    node tweet.js -a
+    tweet -a
     oauth_token : XXXXXX
     oauth_token_secret : XXXXXX
     Open this URL your browser. : https://twitter.com/oauth/authenticate?oauth_token=XXXXXX
@@ -27,15 +31,15 @@ twに比べて機能は不足しています。
 
 最新30件のTL取得
 
-    node tweet.js -t 30
+    tweet -t 30
     
 ツイート
 
-    node tweet.js 'tweet message'
+    tweet 'tweet message'
     
 リプライ
 
-    node tweet.js -r REPLY_ID '@USER reply message.'
+    tweet -r REPLY_ID '@USER reply message.'
 
 ## Release Note
 
@@ -47,7 +51,6 @@ twに比べて機能は不足しています。
 * マルチユーザ対応
 * 最後に取得したTLをローカルキャッシュする
 * 毎回TL取得するんじゃなくて基準時間(1min)以内だったらキャッシュを表示する
-* npmに登録する
 * オブジェクト指向プログラミングに書きなおし
 * Reply時の@ユーザ名の自動入力補助
   * 自分の名前を抜く
@@ -64,4 +67,4 @@ twに比べて機能は不足しています。
   * Reply時の@ユーザ名の自動入力補助 基本機能
 * 共通機能の関数化
 * 取得するTLの数を設定できるように
-* githubに登録する
+* npm, githubに登録する
