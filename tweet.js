@@ -1,36 +1,14 @@
 const ANSI = [
-  //'[0m',
-  //'[1m',
-  //'[3m',
-  //'[4m',
-  //'[7m',
-  //'[9m',
-  //'[22m',
-  //'[23m',
-  //'[24m',
-  //'[27m',
-  //'[29m',
-  //'[30m',
   '[31m',
   '[32m',
   '[33m',
   '[34m',
   '[35m',
   '[36m',
-  //'[37m',
-  //'[39m',
-  //'[40m',
-  //'[41m',
-  //'[42m',
-  //'[43m',
-  //'[44m',
-  //'[45m',
-  //'[46m',
-  //'[47m',
-  //'[49m'
 ];
 
 // config
+process.env['NODE_CONFIG_DIR'] =  __dirname + '/config/';
 var conf = require('config');
 //console.log(conf);
 var consumer_key = conf.consumer_key,
