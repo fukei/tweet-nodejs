@@ -1,8 +1,8 @@
 {
   "name": "tweet-nodejs",
+  "preferGlobal": "true",
   "description": "Twitter Client for Terminal",
   "version": "0.0.1",
-  "private": true,
   "author": "fukei",
   "dependencies": {
     "argv": "0.0.1",
