@@ -9,9 +9,21 @@ twに比べて機能は不足しています。
 
 ## How to use?
 
+ダウンロードして初期設定
+
+※node.jsとnpmが入っている前提です
+
+    git clone https://github.com/fukei/tweet-nodejs.git
+    cd tweet-nodejs
+    npm install
+
 ユーザ登録。ブラウザで認証して表示されたPINコードを取得して入力。
 
     node tweet.js -a
+    oauth_token : XXXXXX
+    oauth_token_secret : XXXXXX
+    Open this URL your browser. : https://twitter.com/oauth/authenticate?oauth_token=XXXXXX
+    And input PIN code : ←PINを入力
 
 最新30件のTL取得
 
@@ -27,7 +39,7 @@ twに比べて機能は不足しています。
 
 ## Release Note
 
-### 0.0.1 (2013/02/12)
+### 0.0.1 (2013/02/13)
 * 初版: アカウント登録、タイムライン表示、つぶやく、返信機能に対応 
 
 
