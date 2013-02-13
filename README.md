@@ -2,7 +2,7 @@ Twitter Client for Terminal (tweet-nodejs)
 ===========
 
 ## What is this?
-Rubygemsのtw(http://shokai.github.com/tw/)がカッコ良かったので、
+Rubygemsで公開されている[tw](http://shokai.github.com/tw/)がカッコ良かったので、
 真似てNode.jsで作ってみたターミナル用Twitterクライアントです。
 
 twに比べて機能は不足しています。
@@ -47,7 +47,7 @@ twに比べて機能は不足しています。
 * マルチユーザ対応
 * 最後に取得したTLをローカルキャッシュする
 * 毎回TL取得するんじゃなくて基準時間(1min)以内だったらキャッシュを表示する
-* npm, githubに登録する
+* npmに登録する
 * オブジェクト指向プログラミングに書きなおし
 * Reply時の@ユーザ名の自動入力補助
   * 自分の名前を抜く
@@ -64,3 +64,4 @@ twに比べて機能は不足しています。
   * Reply時の@ユーザ名の自動入力補助 基本機能
 * 共通機能の関数化
 * 取得するTLの数を設定できるように
+* githubに登録する
