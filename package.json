@@ -3,9 +3,7 @@
   "description": "Twitter Client for Terminal",
   "version": "0.0.1",
   "private": true,
-  "author": {
-    "name": "fukei"
-  },
+  "author": "fukei",
   "dependencies": {
     "argv": "0.0.1",
     "config": "0.4.18",
@@ -15,5 +13,23 @@
   "bin": {
     "tweet": "./tweet"
   },
-  "main": "./tweet.js"
+  "main": "./tweet.js",
+  "readmeFilename": "README.md",
+  "gitHead": "7c6ef81438fde0eafae7d137341c9f62464e6b3d",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:fukei/tweet-nodejs.git"
+  },
+  "keywords": [
+    "twitter",
+    "cli"
+  ],
+  "license": "MIT"
 }
